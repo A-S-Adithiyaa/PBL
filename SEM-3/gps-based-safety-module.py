@@ -15,14 +15,14 @@ lat1 = radians(13.13681)
 lon1 = radians(77.56753)
 
 
-def send_mail(latitude, longitude, to = "1by20ai001@bmsit.in", emg=0):
+def send_mail(latitude, longitude, to = "to-address", emg=0):
 
     first_mail_body = "\nThe user has gone outside the 5km mark radius from home.\n\nCurrent user locations\nLatitude : " + str(latitude) + "\nLongitude : " + str(longitude) + "\n\nLocation will be sent every 5 mins from now on, until user is inside the safe zone."
 
     second_mail_body = "\nThe user is currently inside the 5km radius.\n\nCurrent user locations\nLatitude : " + str(latitude) + "\nLongitude : " + str(longitude)
 
-    sender_address = 'adithiyaa1112@gmail.com'
-    sender_pass = 'Ruby56937'
+    sender_address = 'sender-mail'
+    sender_pass = 'sender-password'
     receiver_address = to
 
     message = MIMEMultipart()
